@@ -2,6 +2,13 @@
   width: 100%;
   position: fixed;
   z-index: 100;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.header.header-active {
+  background-color: #1a1a25ea;
+  height: 11vh;
 }
 
 .header .top-header {
@@ -32,6 +39,7 @@
 .header .top-header .navSide ul .li-stat ul li {
   border-bottom: 1px solid rgba(128, 128, 128, 0.488);
   line-height: 8px;
+  z-index: 100;
 }
 
 .header .top-header .navSide ul .li-stat ul li:hover {
@@ -87,6 +95,7 @@
 .header .top-header .navSide ul .li-aut ul li {
   border-bottom: 1px solid rgba(128, 128, 128, 0.488);
   line-height: 8px;
+  z-index: 100;
 }
 
 .header .top-header .navSide ul .li-aut ul li.li-aut-end {
@@ -142,6 +151,7 @@
 .header .top-header .navSide ul .li-exp ul li {
   border-bottom: 1px solid rgba(128, 128, 128, 0.488);
   line-height: 8px;
+  z-index: 100;
 }
 
 .header .top-header .navSide ul .li-exp ul li.li-exp-end {
@@ -197,6 +207,7 @@
 .header .top-header .navSide ul .li-home ul li {
   border-bottom: 1px solid rgba(128, 128, 128, 0.488);
   line-height: 8px;
+  z-index: 100;
 }
 
 .header .top-header .navSide ul .li-home ul li.home-li-3 {
@@ -1130,8 +1141,69 @@
   color: #F32177;
 }
 
+.works .set-4 {
+  margin-bottom: 60px;
+}
+
+.works .set-4 ul li {
+  cursor: pointer;
+}
+
+.works .set-4 ul li .div-second {
+  margin-top: 20px;
+}
+
+.works .set-4 ul li .div-third {
+  margin-top: 20px;
+}
+
+.works .set-4 ul li .div-second-1 {
+  margin-top: 20px;
+}
+
+.works .set-4 ul li .div-third-1 {
+  margin-top: 20px;
+}
+
+.works .set-4 ul li .div-second-2 {
+  margin-top: 20px;
+}
+
+.works .set-4 ul li .div-third-2 {
+  margin-top: 20px;
+}
+
+.works .set-4 ul li img {
+  width: 50px;
+  border-radius: 50px;
+  margin: 0 10px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.works .set-4 ul li img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border: 5px solid #DF2980;
+}
+
+.works .set-4 ul li h6 {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+}
+
+.works .set-4 ul li span {
+  color: #9C9C9C;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+}
+
 .works .set-5 {
-  margin: 30px 0 80px 0px;
+  margin: 30px 0 90px 0px;
 }
 
 .works .set-5 .meta {
@@ -1340,7 +1412,6 @@
 
 .footer {
   background-color: #242435;
-  height: 60vh;
 }
 
 .footer .footer-text {
@@ -1540,6 +1611,37 @@
 .footer .faq .faq-text ul li a i {
   color: white;
   font-size: 14px;
+}
+
+.to-top {
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 32px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.to-top.active {
+  opacity: 1;
+  bottom: 32px;
+  pointer-events: auto;
 }
 
 @media (max-width: 576px) {

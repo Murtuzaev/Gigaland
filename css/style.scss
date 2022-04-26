@@ -3,6 +3,11 @@
     width: 100%;
     position: fixed;
     z-index: 100;
+    transition: 0.3s ease-in;
+    &.header-active{
+        background-color: #1a1a25ea;
+        height: 11vh;
+    }
   .top-header{ 
       margin-top: 10px;
     .navSide{
@@ -27,6 +32,7 @@
                     li{
                         border-bottom: 1px solid rgba(128, 128, 128, 0.488);
                         line-height: 8px;
+                        z-index: 100;
                         &:hover{
                             background: linear-gradient(217deg, #1081e8, #F32177);
                         }
@@ -75,6 +81,7 @@
                     li{
                         border-bottom: 1px solid rgba(128, 128, 128, 0.488);
                         line-height: 8px;
+                        z-index: 100;
                         &.li-aut-end{
                             border-bottom: none;
                         }
@@ -123,6 +130,7 @@
                     li{
                         border-bottom: 1px solid rgba(128, 128, 128, 0.488);
                         line-height: 8px;
+                        z-index: 100;
                         &.li-exp-end{
                             border-bottom: none;
                         }
@@ -171,6 +179,7 @@
                     li{
                         border-bottom: 1px solid rgba(128, 128, 128, 0.488);
                         line-height: 8px;
+                        z-index: 100;
                         &.home-li-3{
                             border-bottom: none;
                         }
@@ -216,7 +225,6 @@
                     }
                 }
             }
-       
         }
         button{
             background: linear-gradient(217deg, #1081e8, #F32177);
@@ -264,6 +272,7 @@
     .gigi-text{
         p{
             color: #FFFFFF;
+            
             font-weight: 700;
             font-size: 16px;
             letter-spacing: 12px;
@@ -933,8 +942,58 @@
             color: #F32177;
         }
     }
+    .set-4{
+        margin-bottom: 60px;
+            ul{
+                li{
+                    cursor: pointer;
+                    .div-second{
+                        margin-top: 20px;
+                    }
+                    .div-third{
+                        margin-top: 20px;
+                    }
+                    .div-second-1{
+                        margin-top: 20px;
+                    }
+                    .div-third-1{
+                        margin-top: 20px;
+                    }
+                    .div-second-2{
+                        margin-top: 20px;
+                    }
+                    .div-third-2{
+                        margin-top: 20px;
+                    }
+                    img{
+                        width: 50px;
+                        border-radius: 50px;
+                        margin: 0 10px;
+                        transition: 0.2s ease-in-out;
+                        &:hover{
+                            transform: scale(1);
+                            border: 5px solid #DF2980;
+                        }
+                    }
+                    h6{
+                        color: white;
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-top: 5px;
+                        font-family: Montserrat, Helvetica, Arial, sans-serif;
+                    }
+                    span{
+                        color: #9C9C9C;
+                        font-size: 14px;
+                        font-weight: bold;
+                        font-family: Montserrat, Helvetica, Arial, sans-serif;
+                    }
+
+                }
+        }
+    }
     .set-5{
-        margin: 30px 0 80px 0px;
+        margin: 30px 0 90px 0px;
         .meta{
             background-color: #242435;
             width: 200px;
@@ -1092,7 +1151,6 @@
 // ---FOOTER START---
 .footer{
 background-color: #242435;
-height: 60vh;
 .footer-text{
     padding: 80px 0 0 20px;
     width: 90%;
@@ -1255,7 +1313,28 @@ height: 60vh;
 }
 // ---FOOTER END---
 
-
+.to-top{
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition:  all .4s;
+    &.active{
+        opacity: 1;
+        bottom: 32px;
+        pointer-events: auto;
+    }
+}
 
 
 
